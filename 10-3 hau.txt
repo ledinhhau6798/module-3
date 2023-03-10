@@ -1,0 +1,22 @@
+10/3/23
+-SQL(Structured Query Language) (ngôn ngữ truy vấn có cấu trúc)
++ được sử dụng thể thao tác với các CSDL Quan hệ.
+
+- Cơ sở dữ liệu quan hệ:
++ là CSDL được xấy dựng dựa trên mô hình dữ liệu quan hệ
++dữ liệu được tổ chứ trong các bảng
++các bảng bao gồm cột và dòng
++dòng còn được gọi là bản ghi hoặc hàng
++cột còn được gọi là thuộc tính hoặc trường
++một bảng thường lưu trữ dữ liệu của một loại thực thể nhất định
+
+- BDMS ( Database Managament System):
++ là một ứng dụng máy tính được sử dụng để quản lý CSDL
+
+-ERD (Entity Relationship Diagram):
++ là sơ đồ các thực thể mối quan hệ
+
+- các mối quan hệ giữa các bảng:
++ mối quan hệ 1 - 1:một bản ghi trong bảng chỉ liên quan đến một bản ghi trong bảng khác và ngược lại.
++ mối quan hệ 1 - n:1 bộ phận có nhiều nhân viên và 1 nhân viên chỉ thuộc 1 bộ phận
++ mối quan hệ n - n:1 khách hàng có thể order nhiều sản phẩm và 1 sản phẩm có thể đc order bởi nhiều khách hàng

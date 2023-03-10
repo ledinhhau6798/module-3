@@ -1,0 +1,41 @@
+09/03/2023
+1. Ràng buộc là gì:
+	- là quy tắc để quy định dữ liệu nhập vào cho bảng
+	- đảm bảo tính chính xác, toàn vẹn của dữ liệu
+	- Có những ràng buộc nào:
+	+ primary key(khóa chính): là một cột (hoặc nhiều cột ) được sử dụng để xác định một bản ghi duy nhất trong bảng 
+	. khóa chính là UNIQUE và NOT NULL 
+	. mỗi bản chỉ có thể có 1 khóa chính
+	. được sử dụng để định dạng khóa chính.
+ 	
+	+ foreign key(khóa ngoại):
+	. là cơ chế để tạo liên kết giữa 2 bản trong cùng CSDL
+	. được đặt trên 1 cột của bản này và tham chiếu đến khóa chính của bảng khác
+	. kiểu dữ liệu khóa chính và khóa ngoại phải giống nhau
+ 	
+	+ not null:
+	. mặc định các trường trong bản có thế chứa các giá trị null
+	. sử dụng từ khóa NOT NULL để bắt buộc các trường phải có giá trị khác null
+	
+	+default:
+	. được sử dụng quy định giá trị mặc định cho một trường
+	. giá trị mặc định được sử dụng nếu không NULL được nhập vào
+ 
+ 	+unique:
+	. mặc định các trường trong bảng có thể chứa các giá trị giống nhau
+	. sử dụng từ khóa UNIQUE để bắt buộc các giá trị trong cột phải khác nhau
+
+	+check: 
+	. được sử dụng quy định điều kiện ràng buộc cho giá trị của cột
+
+2. các cách tạo, xóa
+- tạo CSDL: CREATE DATABASE databasename;
+- xóa CSDL: DROP DATABASE databasename;
+- tạo bảng: CREATE TABLE table_name();
+- xóa bảng: DROP TABLE table_name;
+- thêm cột:   ALTER TABLE tên_bảng
+		ADD tên_cột kiểu_dữ_liệu;
+- xóa cột:     ALTER TABLE tên_bảng
+		DROP TABLE tên_cột;
+- thêm dữ liệu: ÍNERT INTO tên_bảng (tên_cột_1,tên_cột_2,...) values (giá_Trị_1,giá_trị_2,...);
+- xóa dữ liệu: DELETE From tên_bảng WHERE cái_cần_xóa;
